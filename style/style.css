@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Manrope;
+}
+* p {
+  font-size: 14px;
+}
+
+body {
+  background-color: #ecf2f8;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: white;
+  width: 85%;
+  margin: auto;
+  border-radius: 15px;
+}
+main > img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  height: 200px;
+  position: relative;
+}
+main h1, main h2, main p {
+  color: #48556a;
+}
+main h1 {
+  margin: 20px;
+  margin-top: 30px;
+  font-size: 17px;
+}
+main .wrapper > p {
+  margin: 23px;
+}
+main .profile {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+main .profile .profile-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+main .profile h2 {
+  font-size: 18px;
+}
+main .profile .container-bubble button {
+  border-radius: 50%;
+  border: none;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+main .profile .container-bubble button > img {
+  width: 15px;
+  height: 15px;
+}
+main .profile .container-bubble button:hover {
+  background-color: #48556a;
+}
+main .profile .container-bubble button:hover > svg path {
+  fill: white;
+}
+main .profile .share-desktop {
+  display: none;
+}
+main .share, main .share-desktop {
+  background-color: #48556a;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  height: 45px;
+  border-radius: 0 0 15px 15px;
+}
+main .share p, main .share-desktop p {
+  font-size: 15px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+main .share .socmed, main .share-desktop .socmed {
+  margin-left: 10px;
+}
+main .share .socmed img, main .share-desktop .socmed img {
+  margin: 0 5px;
+}
+main .share > button, main .share-desktop > button {
+  border-radius: 50%;
+  border: none;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #6d7f97;
+  margin-left: auto;
+}
+main .share > button > svg path, main .share-desktop > button > svg path {
+  fill: white;
+}
+main .share p, main .share-desktop p {
+  color: #9eafc2;
+}
+
+@media only screen and (min-width: 376px) {
+  main {
+    max-width: 400px;
+  }
+  main > img {
+    height: auto;
+  }
+}
+@media only screen and (min-width: 800px) {
+  main {
+    max-width: none;
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+  }
+  main .wrapper {
+    padding: 25px;
+    z-index: 1;
+  }
+  main > img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px 0 0 15px;
+  }
+  main .profile {
+    justify-content: flex-start;
+  }
+  main .profile > img {
+    margin-right: 20px;
+  }
+  main .profile .container-bubble {
+    margin-left: auto;
+  }
+  main .container-bubble {
+    position: relative;
+  }
+  main .container-bubble .share-desktop {
+    position: absolute;
+    left: -115px;
+    width: 225px;
+    height: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    top: -75px;
+  }
+  main .container-bubble .share-desktop .triangle-bubble {
+    position: absolute;
+    left: calc(50% - 20px);
+    top: 20px;
+    height: 40px;
+    width: 40px;
+    background-color: #48556a;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+  main .container-bubble .share-desktop img {
+    width: 25px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
